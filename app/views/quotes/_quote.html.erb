@@ -1,0 +1,8 @@
+<div>
+  <%= link_to quote.name, quote_path(quote) %>
+
+  <div>
+    <%= link_to 'Delete', quote_path(quote), data: { turbo_method: :delete } %>
+    <%= link_to 'Edit', edit_quote_path(quote) %>
+  </div>
+</div>

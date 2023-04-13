@@ -1,0 +1,10 @@
+<%= form_with(model: quote) do |f| %>
+  <% if quote.errors.any? %>
+    <div>
+      <%= quote.errors.full_messages.to_sentence.capitalize %>
+    </div>
+  <% end %>
+
+  <%= f.text_field :name, autofocus: true %>
+  <%= f.submit %>
+<% end %>
