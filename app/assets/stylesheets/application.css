@@ -13,3 +13,75 @@
  *= require_tree .
  *= require_self
  */
+
+ /* --- Base --- */
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --- Buttons --- */
+.button {
+    padding: 0.5em;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    height: fit-content;
+    align-self: center;
+    background: white;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 0.2em;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+/* --- Quotes --- */
+.quote {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 0.2em;
+}
+
+.quote .quote__name {
+    text-decoration: none;
+    color: black;
+}
+
+.quote .quote__name:hover {
+    text-decoration: underline;
+}
+
+ /* --- Form --- */
+.form {
+    width: 100%;
+}
+
+.form .field {
+    margin: 0 0 1em 0;
+}
+
+.form .buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form .input {
+    padding: 0.4em;
+    border: 1px solid black;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+    width: 100%;
+}
