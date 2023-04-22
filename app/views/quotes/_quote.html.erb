@@ -4,7 +4,7 @@
   </span>
 
   <div>
-    <%= link_to 'Delete', quote_path(quote), data: { turbo_method: :delete }, class: 'button' %>
-    <%= link_to 'Edit', edit_quote_path(quote), class: 'button' %>
+    <%= link_to 'Edit', edit_quote_path(quote), class: 'button is-gray' %>
+    <%= link_to 'Delete', quote_path(quote), data: { turbo_method: :delete }, class: 'button is-red' %>
   </div>
 </div>

@@ -37,11 +37,28 @@
     cursor: pointer;
     font-size: 1em;
     border-radius: 0.2em;
+    transition: 0.3s all ease-in-out;
 }
 
 .button:hover {
+    padding: 0.65em;
+}
+
+.button.is-blue {
+    background-color: lightskyblue;
+}
+
+.button.is-green {
+    background-color: lightgreen;
+}
+
+.button.is-red {
+    background-color: lightcoral;
+}
+
+.button.is-gray {
+    background-color: lightslategray;
     color: white;
-    background-color: black;
 }
 
 /* --- Card --- */
