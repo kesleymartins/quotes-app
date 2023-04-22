@@ -35,7 +35,7 @@
     align-self: center;
     background: white;
     cursor: pointer;
-    border: 1px solid black;
+    font-size: 1em;
     border-radius: 0.2em;
 }
 
@@ -44,44 +44,44 @@
     background-color: black;
 }
 
-/* --- Quotes --- */
-.quote {
+/* --- Card --- */
+.card {
     margin: 1em 0;
     padding: 1em;
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
     border-radius: 0.2em;
+    box-sizing: border-box;
 }
 
-.quote .quote__name {
+/* --- Quotes --- */
+.quote__name {
     text-decoration: none;
     color: black;
 }
 
-.quote .quote__name:hover {
+.quote__name:hover {
     text-decoration: underline;
 }
 
- /* --- Form --- */
-.form {
-    width: 100%;
-}
-
-.form .field {
-    margin: 0 0 1em 0;
-}
-
-.form .buttons {
+/* --- Form --- */
+.field {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    width: 60%;
 }
 
-.form .input {
+.input {
+    width: 100%;
+    height: 100%;
+    display: flex;
     padding: 0.4em;
     border: 1px solid black;
     border-radius: 0.3em;
     box-sizing: border-box;
-    width: 100%;
+}
+
+.input-error {
+    color: red;
 }

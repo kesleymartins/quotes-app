@@ -1,15 +1,16 @@
-<%= form_with(model: quote, class: 'form') do |f| %>
-  <% if quote.errors.any? %>
-    <div>
-      <%= quote.errors.full_messages.to_sentence.capitalize %>
-    </div>
-  <% end %>
-
+<%= form_with(model: quote, class: 'card') do |f| %>
   <div class="field">
     <%= f.text_field :name, autofocus: true, class: 'input' %>
+
+    <% unless quote.errors[:name].empty? %>
+      <span class="input-error">
+        <%= quote.errors[:name].first.capitalize %>
+      </span>
+    <% end %>
   </div>
 
-  <div class="buttons">
+  <div>
     <%= f.submit class: 'button' %>
+    <%= link_to 'Cancel', quotes_path, class: 'button' %>
   </div>
 <% end %>
