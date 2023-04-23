@@ -1,10 +1,12 @@
-<div class="card">
-  <span>
-    <%= link_to quote.name, quote_path(quote), class: 'quote__name' %>
-  </span>
+<%= turbo_frame_tag dom_id(quote) do %>
+  <div class="card">
+    <span>
+      <%= link_to quote.name, quote_path(quote), class: 'quote__name' %>
+    </span>
 
-  <div>
-    <%= link_to 'Edit', edit_quote_path(quote), class: 'button is-gray' %>
-    <%= link_to 'Delete', quote_path(quote), data: { turbo_method: :delete }, class: 'button is-red' %>
+    <div>
+      <%= link_to 'Edit', edit_quote_path(quote), class: 'button is-gray' %>
+      <%= link_to 'Delete', quote_path(quote), data: { turbo_method: :delete }, class: 'button is-red' %>
+    </div>
   </div>
-</div>
+<% end %>
